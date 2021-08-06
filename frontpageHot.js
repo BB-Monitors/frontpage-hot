@@ -23,7 +23,7 @@ async function main () {
   if( typeof previousValue === 'undefined' ){
     console.log(`Latest item: ${newValue}, link is https://slickdeals.net${newItemLink}`);
   } else if( previousValue !== newValue){
-    console.log(`New item: ${newValue}, link is https://slickdeals.net${newItemLink}`);
+    console.log(`New item:  ${newValue}, link is https://slickdeals.net${newItemLink}`);
     console.log(Date());
     oldWebhook(oldItemLink, oldValue)
     newWebhook(newItemLink, newValue)
