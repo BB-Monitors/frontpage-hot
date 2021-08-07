@@ -46,7 +46,7 @@ async function newWebhook(url, item) {
     .setFooter('', 'https://cdn.discordapp.com/icons/718372968383643678/de8ebf56f71dccba06039dcd27426e30.webp?size=256')
     .setTimestamp();
     hook.send(embed);
-  }, 100)
+  }, 250)
 }
 async function oldWebhook(url, item) {
   const embed = new MessageBuilder()
