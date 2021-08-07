@@ -1,7 +1,7 @@
 const axios = require("axios")
 const cheerio = require("cheerio")
 const { Webhook, MessageBuilder } = require('discord-webhook-node');
-const hook = new Webhook("https://ptb.discord.com/api/webhooks/871556061667147806/fVZ803Wv6Za46_ZgzuXl-ssmzDuF2U4yh4l18lHn_2uVIXmZ5VaRM__9XjlaRTws7zHR");
+const hook = new Webhook("https://discord.com/api/webhooks/871789208610693211/HWThH0GxZDufHH3okEGAxhJkRB1cnhE3twb5EdsK06m9JvJP-lL2_vLcNR5xx2z3QNbr");
 
 let previousValue;
  
