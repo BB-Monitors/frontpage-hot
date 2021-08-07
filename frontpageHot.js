@@ -21,7 +21,7 @@ async function main () {
   let oldItemLink = $('div.resultRow:nth-child(2) > div:nth-child(2) > div:nth-child(1) > a:nth-child(1)').attr('href')
 
   if( typeof previousValue === 'undefined' ){
-    console.log(`Latest item: ${newValue}, link is https://slickdeals.net${newItemLink}`);
+    console.log(`Latest item:  ${newValue}, link is https://slickdeals.net${newItemLink}`);
   } else if( previousValue !== newValue){
     console.log(`New item:  ${newValue}, link is https://slickdeals.net${newItemLink}`);
     console.log(Date());
