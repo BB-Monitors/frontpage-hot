@@ -22,7 +22,6 @@ async function main () {
 
   if( typeof previousValue === 'undefined' ){
     console.log(`Latest item: ${newValue}, link is https://slickdeals.net${newItemLink}`);
-    startWebhook(newItemLink, newValue)
   } else if( previousValue !== newValue){
     console.log(`New item:  ${newValue}, link is https://slickdeals.net${newItemLink}`);
     console.log(Date());
@@ -46,7 +45,7 @@ async function newWebhook(url, item) {
     .setFooter('', 'https://cdn.discordapp.com/icons/718372968383643678/de8ebf56f71dccba06039dcd27426e30.webp?size=256')
     .setTimestamp();
     hook.send(embed);
-  }, 250)
+  }, 100)
 }
 async function oldWebhook(url, item) {
   const embed = new MessageBuilder()
@@ -62,18 +61,6 @@ async function oldWebhook(url, item) {
   hook.send(embed);
 }
 
-async function startWebhook(url, item) {
-  const embed = new MessageBuilder()
-  .setTitle('Monitor is online!')
-  .setAuthor('BB Monitors', '')
-  .addField(`Latest post URL:`, `[link](https://www.slickdeals.net${url})`, true)
-  .setColor('#00FF00')
-  .setThumbnail('https://cdn.discordapp.com/icons/718372968383643678/de8ebf56f71dccba06039dcd27426e30.webp?size=256')
-  .setDescription(`Latest post: ${item}`)
-  .setFooter('', 'https://cdn.discordapp.com/icons/718372968383643678/de8ebf56f71dccba06039dcd27426e30.webp?size=256')
-  .setTimestamp();
-  hook.send(embed);
-}
 
 // let listTime = $('#searchResults > div:nth-child(1) > div.mainDealInfo > div > div > div').text.split('Posted')[1].split('\n')[0].substring(11,7)
 // $('#searchResults > div:nth-child(1) > div.mainDealInfo > div > div > div').text.split('Posted')[1].split('\n')[0].substring(11,7)
