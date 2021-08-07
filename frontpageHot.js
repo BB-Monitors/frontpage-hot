@@ -74,6 +74,3 @@ async function startWebhook(url, item) {
   .setTimestamp();
   hook.send(embed);
 }
-
-// let listTime = $('#searchResults > div:nth-child(1) > div.mainDealInfo > div > div > div').text.split('Posted')[1].split('\n')[0].substring(11,7)
-// $('#searchResults > div:nth-child(1) > div.mainDealInfo > div > div > div').text.split('Posted')[1].split('\n')[0].substring(11,7)
