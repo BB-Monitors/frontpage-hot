@@ -69,7 +69,7 @@ async function startWebhook(url, item) {
   .addField(`Latest post URL:`, `[link](https://www.slickdeals.net${url})`, true)
   .setColor('#00FF00')
   .setThumbnail('https://cdn.discordapp.com/icons/718372968383643678/de8ebf56f71dccba06039dcd27426e30.webp?size=256')
-  .setDescription(item)
+  .setDescription(`Latest post: ${item}`)
   .setFooter('', 'https://cdn.discordapp.com/icons/718372968383643678/de8ebf56f71dccba06039dcd27426e30.webp?size=256')
   .setTimestamp();
   hook.send(embed);
