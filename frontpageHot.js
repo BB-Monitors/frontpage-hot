@@ -62,7 +62,7 @@ async function oldWebhook(url, item) {
   hook.send(embed);
 }
 
-async function startwebhook(url, item) {
+async function startWebhook(url, item) {
   const embed = new MessageBuilder()
   .setTitle('Monitor is online!')
   .setAuthor('BB Monitors', '')
