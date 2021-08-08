@@ -6,7 +6,7 @@ const hook = new Webhook("https://discord.com/api/webhooks/871789208610693211/HW
 let previousValue;
  
 main();
-setInterval(main, 1000);
+setInterval(main, 2000);
 
 async function fetchHTML(url) {
   const { data } = await axios.get(url)
